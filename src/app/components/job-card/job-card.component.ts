@@ -66,9 +66,5 @@ export class JobCardComponent implements OnInit {
     };
 
     const modalRef = this.modal.open(DeleteJobModalComponent, modalConfig);
-
-    modalRef.afterClosed().subscribe((result) => {
-      console.log(result);
-    });
   }
 }

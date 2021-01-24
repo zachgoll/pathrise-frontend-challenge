@@ -1,0 +1,33 @@
+<mat-card
+  class="container"
+  [ngStyle]="{ 'background-color': color.background, color: color.text }"
+  (mouseenter)="isHovering = true"
+  (mouseleave)="isHovering = false"
+>
+  <div class="details" fxLayout="row" fxLayoutAlign="start center">
+    <div class="logo-container" fxLayout="row" fxLayout="center center">
+      <img
+        class="logo"
+        [src]="logoUrl"
+        alt="logo"
+        (error)="handleLogoError($event)"
+      />
+    </div>
+    <div class="name" fxFlex>
+      <h3>{{ job.companyName }}</h3>
+      <p>{{ job.jobRole }}</p>
+    </div>
+    <div
+      *ngIf="isHovering"
+      class="delete-icon-container"
+      fxLayout="row"
+      fxLayoutAlign="center center"
+      [ngStyle]="{ 'border-color': color.text }"
+    >
+      <mat-icon (click)="openModal(job.id)">delete</mat-icon>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="end end">
+    <p class="display-time">{{ displayTime }}</p>
+  </div>
+</mat-card>

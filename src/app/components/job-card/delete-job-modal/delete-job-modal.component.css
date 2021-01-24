@@ -1,0 +1,25 @@
+.dialog-footer button {
+  margin-bottom: 20px;
+}
+
+.ff-input {
+  width: 300px;
+}
+
+.modal-container {
+  padding: 10px;
+}
+
+.dialog-title {
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+  color: #180145;
+}
+
+.form-icon {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.cancel-btn {
+  opacity: 0.7;
+}

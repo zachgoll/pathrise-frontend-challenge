@@ -1,0 +1,26 @@
+.dialog-footer,
+.dialog-footer button {
+  width: 100%;
+}
+
+.dialog-footer button {
+  margin-bottom: 20px;
+}
+
+.ff-input {
+  width: 300px;
+}
+
+.modal-container {
+  padding: 10px;
+}
+
+.dialog-title {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #180145;
+}
+
+.form-icon {
+  color: rgba(0, 0, 0, 0.2);
+}

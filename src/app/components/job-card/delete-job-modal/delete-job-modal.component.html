@@ -1,0 +1,24 @@
+<div class="modal-container" fxLayout="column" fxLayoutAlign="start center">
+  <h1 class="dialog-title" mat-dialog-title>Delete Job</h1>
+  <div mat-dialog-content>
+    <p>Are you sure you want to delete this job?</p>
+  </div>
+  <div
+    mat-dialog-actions
+    class="dialog-footer"
+    fxLayout="row"
+    fxLayoutAlign="end center"
+  >
+    <button mat-raised-button color="primary" (click)="onSubmit()">
+      Delete
+    </button>
+    <button
+      mat-raised-button
+      class="cancel-btn"
+      color="primary"
+      (click)="cancel()"
+    >
+      Cancel
+    </button>
+  </div>
+</div>

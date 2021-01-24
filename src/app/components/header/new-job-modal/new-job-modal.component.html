@@ -1,0 +1,27 @@
+<div class="modal-container" fxLayout="column" fxLayoutAlign="start center">
+  <h1 class="dialog-title" mat-dialog-title>Add a Job</h1>
+  <div mat-dialog-content>
+    <form
+      id="new-job-form"
+      (ngSubmit)="onSubmit()"
+      [formGroup]="newJobForm"
+      fxLayout="column"
+    >
+      <mat-form-field class="ff-input" appearance="outline">
+        <mat-label>Company Name</mat-label>
+        <input matInput formControlName="company" />
+        <mat-icon class="form-icon" matSuffix>search</mat-icon>
+      </mat-form-field>
+      <mat-form-field class="ff-input" appearance="outline">
+        <mat-label>Job Title</mat-label>
+        <input matInput formControlName="role" />
+        <mat-icon class="form-icon" matSuffix>business_center</mat-icon>
+      </mat-form-field>
+    </form>
+  </div>
+  <div mat-dialog-actions class="dialog-footer">
+    <button mat-raised-button color="primary" type="submit" form="new-job-form">
+      Continue
+    </button>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.container {
+  max-width: 450px;
+  height: 100vh;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #673ab7;
+  margin-left: 30px;
+}

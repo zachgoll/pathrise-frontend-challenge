@@ -1,0 +1,7 @@
+<div class="container">
+  <app-job-card
+    *ngFor="let job of jobs"
+    [job]="job"
+    (deleteEvent)="deleteJob($event)"
+  ></app-job-card>
+</div>

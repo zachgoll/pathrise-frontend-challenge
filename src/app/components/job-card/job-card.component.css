@@ -1,0 +1,42 @@
+.container {
+  margin: 10px;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 35px;
+}
+
+.logo-container {
+  background-color: white;
+  margin-right: 20px;
+  border-radius: 37px;
+}
+
+.delete-icon-container {
+  border-radius: 50%;
+  border: 1px solid white;
+  height: 35px;
+  width: 35px;
+}
+
+.delete-icon-container:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.details {
+  margin-top: -40px !important;
+}
+
+.name {
+  margin-top: 20px;
+}
+
+.display-time {
+  margin: 0;
+}

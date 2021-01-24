@@ -1,0 +1,11 @@
+<div class="container" fxLayout="column" fxLayoutAlign="start center">
+  <div class="title" fxLayout="row" fxLayoutAlign="center center">
+    <mat-icon class="star">star_border</mat-icon>
+    <h2>WISHLIST</h2>
+    <mat-icon class="star">star_border</mat-icon>
+  </div>
+  <p class="job-count">{{ (jobs$ | async).length }} JOBS</p>
+  <button class="add-job" mat-raised-button (click)="addJob()">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.star {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.title,
+.job-count {
+  margin: 0;
+}
+
+.add-job {
+  width: 100%;
+  margin-top: 20px;
+}

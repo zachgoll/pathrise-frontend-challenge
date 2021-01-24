@@ -41,10 +41,13 @@ export class DataService {
     this.getJobsFromLocalStorage();
   }
 
+  // Get the current value of the Behavior Subject
   protected get jobs(): Job[] {
     return this.jobs$.getValue();
   }
 
+  // If the user has already visited the app, use whatever is in localStorage
+  // If this is the first time a user visits, pre-load with some dummy data
   private getJobsFromLocalStorage(): void {
     const jobs = localStorage.getItem('jobs');
 

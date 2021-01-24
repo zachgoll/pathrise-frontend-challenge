@@ -25,9 +25,5 @@ export class HeaderComponent implements OnInit {
     };
 
     const modalRef = this.modal.open(NewJobModalComponent, modalConfig);
-
-    modalRef.afterClosed().subscribe((result) => {
-      console.log(result);
-    });
   }
 }

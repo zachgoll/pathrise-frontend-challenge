@@ -25,8 +25,6 @@ export class NewJobModalComponent implements OnInit {
   }
 
   onSubmit(): void {
-    console.log(this.newJobForm);
-
     if (!this.newJobForm.valid) {
       return;
     }
